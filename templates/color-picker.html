@@ -1,0 +1,43 @@
+<div class="color-picker-dialog">
+    <h2>{{localize "CUSTOM3DDICE.ColorPicker.Title"}}</h2>
+    
+    <div class="form-group">
+        <label for="diceColor">{{localize "CUSTOM3DDICE.ColorPicker.Color"}}</label>
+        <div class="color-input-group">
+            <input type="color" id="diceColor" name="diceColor" value="{{currentColor}}">
+            <input type="text" id="colorHex" name="colorHex" value="{{currentColor}}" pattern="^#[0-9A-Fa-f]{6}$">
+        </div>
+    </div>
+
+    <div class="preset-colors">
+        <h3>{{localize "CUSTOM3DDICE.ColorPicker.Presets"}}</h3>
+        <div class="color-grid">
+            {{#each presetColors}}
+            <div class="color-preset" style="background-color: {{this}}" data-color="{{this}}" title="{{this}}"></div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="recent-colors">
+        <h3>{{localize "CUSTOM3DDICE.ColorPicker.Recent"}}</h3>
+        <div class="color-grid">
+            {{#each recentColors}}
+            <div class="color-preset" style="background-color: {{this}}" data-color="{{this}}" title="{{this}}"></div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="dialog-buttons">
+        <button type="button" class="dialog-button" data-action="reset">
+            {{localize "CUSTOM3DDICE.ColorPicker.Reset"}}
+        </button>
+        <div class="flex-buttons">
+            <button type="button" class="dialog-button" data-action="cancel">
+                {{localize "CUSTOM3DDICE.ColorPicker.Cancel"}}
+            </button>
+            <button type="button" class="dialog-button primary" data-action="confirm">
+                {{localize "CUSTOM3DDICE.ColorPicker.Confirm"}}
+            </button>
+        </div>
+    </div>
+</div> 

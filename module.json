@@ -15,15 +15,22 @@
     }
   ],
   "scripts": [
+    "scripts/dice-factory.js",
+    "scripts/dice-renderer.js",
     "scripts/module.js"
   ],
-  "styles": [],
+  "styles": [
+    "styles/custom-3d-dice.css"
+  ],
   "languages": [
     {
       "lang": "en",
       "name": "English",
       "path": "languages/en.json"
     }
+  ],
+  "templates": [
+    "templates/color-picker.html"
   ],
   "url": "https://github.com/LesosAI/custom-3d-dice",
   "manifest": "https://github.com/LesosAI/custom-3d-dice/releases/latest/download/module.json",
