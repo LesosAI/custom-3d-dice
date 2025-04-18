@@ -1,0 +1,37 @@
+{
+    "CUSTOM3DDICE": {
+        "Settings": {
+            "EnableAnimations": {
+                "Name": "Enable Animations",
+                "Hint": "Toggle dice roll animations on or off."
+            },
+            "DiceColor": {
+                "Name": "Dice Color",
+                "Hint": "Set the default color for your dice."
+            }
+        },
+        "Dialog": {
+            "Title": "Roll 3D Dice",
+            "DiceType": "Dice Type",
+            "Quantity": "Number of Dice",
+            "Roll": "Roll Dice",
+            "Cancel": "Cancel"
+        },
+        "Errors": {
+            "InitializationFailed": "Failed to initialize the 3D Dice module.",
+            "VersionTooOld": "This module requires Foundry VTT version {min} or higher. Current version: {current}",
+            "VersionNotVerified": "This module is not verified with Foundry VTT version {current}. Last verified version: {max}",
+            "WebGLNotSupported": "WebGL is not supported in your browser. The 3D dice module requires WebGL support.",
+            "ThreeJSNotLoaded": "Required Three.js library is not loaded.",
+            "SocketNotAvailable": "Socket functionality is not available.",
+            "InvalidDiceType": "Invalid dice type: {type}",
+            "RollFailed": "Failed to perform dice roll.",
+            "AnimationFailed": "Failed to animate dice roll."
+        },
+        "Messages": {
+            "Rolling": "Rolling {quantity}d{faces}...",
+            "RollResult": "Roll Result: {total}",
+            "PlayerRolled": "{name} rolled {quantity}d{faces}: {total}"
+        }
+    }
+} 
